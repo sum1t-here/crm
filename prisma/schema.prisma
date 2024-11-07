@@ -17,8 +17,8 @@ model Quiz {
   id            Int           @id @default(autoincrement())
   title         String    
   description   String?
-  questions     Question[]
-  attempts      Attempt[]
+  questions     Question[]    
+  attempts      Attempt[]     
   createdAt     DateTime      @default(now())
 }
 

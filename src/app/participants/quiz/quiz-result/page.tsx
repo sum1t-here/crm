@@ -50,7 +50,12 @@ const RecentQuizMarks = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="flex justify-center items-center space-x-2">
+        <div className="w-8 h-8 border-t-2 border-blue-500 border-solid rounded-full animate-spin"></div>
+        <span>Loading active quizzes...</span>
+      </div>
+    );
   }
 
   if (error) {
